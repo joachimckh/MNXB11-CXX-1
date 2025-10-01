@@ -55,7 +55,7 @@ To submit your homework assignment, follow these steps:
    See: <https://github.blog/news-insights/product-news/introducing-draft-pull-requests/>
 3. When it is ready for review, mark the pull request as ready. Ideally this would be done after all tests pass.
 4. Please also submit on canvas the link to your pull request. A pull request link looks like this:  
-   <https://github.com/YOURGITHUBUSERNAME/MNXB11-HW1-CXX/pull/PRNUMBER>.  
+   <https://github.com/YOURGITHUBUSERNAME/MNXB11-CXX-1/pull/PRNUMBER>.  
    For example Florido's pull request number 5 would be  
    <https://github.com/floridop/MNXB11-CXX-1/pull/6>
 
