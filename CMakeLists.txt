@@ -26,7 +26,7 @@ target_link_libraries(main PRIVATE hwlib)
 include(CTest)
 include(Catch)
 
-set(LVL 1 CACHE STRING "Homework level (1,2,3)")
+set(LVL 2 CACHE STRING "Homework level (1,2,3)")
 
 if(LVL GREATER_EQUAL 1)
   add_executable(test_runner1 tests/test1.cxx)
