@@ -4,8 +4,8 @@
 #include "as3.hpp"
 
 TEST_CASE("3.1a") {
-  homework::Color c = homework::red;
-  REQUIRE(c == homework::red);
+  homework::Color c = homework::Color::red;
+  REQUIRE(c == homework::Color::red);
   REQUIRE(c != 0); // Ensure that enum values are not implicitly convertible to int
 }
 
@@ -16,8 +16,8 @@ TEST_CASE("3.1a") {
 // }
 
 TEST_CASE("3.1c") {
-  homework::Apple apple{homework::green};
-  REQUIRE(apple.getColor() == homework::green);
+  homework::Apple apple{homework::Color::green};
+  REQUIRE(apple.getColor() == homework::Color::green);
   REQUIRE(apple.getName() == "apple");
   REQUIRE(apple.getTaste() == "sweet");
 }
