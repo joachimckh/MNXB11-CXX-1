@@ -55,9 +55,9 @@ To submit your homework assignment, follow these steps:
    See: <https://github.blog/news-insights/product-news/introducing-draft-pull-requests/>
 3. When it is ready for review, mark the pull request as ready. Ideally this would be done after all tests pass.
 4. Please also submit on canvas the link to your pull request. A pull request link looks like this:  
-   <https://github.com/YOURGITHUBUSERNAME/MNXB11-HW1-CXX/pull/PRNUMBER>.  
-   For example Florido's pull request number 5 would be  
-   <https://github.com/floridop/MNXB11-HW1-CXX/pull/5>
+   <https://github.com/YOURGITHUBUSERNAME/MNXB11-CXX-1/pull/PRNUMBER>.  
+   For example Florido's pull request number 6 would be  
+   <https://github.com/floridop/MNXB11-CXX-1/pull/6>
 
 ## Use of AI Tools
 You are allowed to use AI tools such as ChatGPT to assist you in completing the assignment. However, you must ensure that the final submission is your own work and that you understand all the code you submit. If you use AI tools, please acknowledge their use in your submission and describe how they were used.
