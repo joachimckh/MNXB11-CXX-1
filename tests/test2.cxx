@@ -7,8 +7,8 @@
 TEST_CASE("2.1") {
   homework::Foo foo{};
   REQUIRE(foo.bar() == 42);
-  REQUIRE(foo.baz() == Approx(3.14f));
-  REQUIRE(foo.x == Approx(2.71f));
+  REQUIRE(foo.baz() == 3.14f);
+  REQUIRE(foo.x == 2.71f);
   REQUIRE(foo.quux() == std::vector<double>{1.0, 2.0, 3.0});
 }
 
