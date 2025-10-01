@@ -3,7 +3,7 @@
 
 namespace homework {
 // Mainly from the slides of the first week
-
+// what am i supposed to do?
 // As 1.0 (Hello World) function that prints "Hello, World!"
 // Done for you
 void printHello();
