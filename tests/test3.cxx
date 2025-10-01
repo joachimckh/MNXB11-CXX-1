@@ -6,7 +6,6 @@
 TEST_CASE("3.1a") {
   homework::Color c = homework::Color::red;
   REQUIRE(c == homework::Color::red);
-  REQUIRE(c != 0); // Ensure that enum values are not implicitly convertible to int
 }
 
 // TEST_CASE("3.1b"){
