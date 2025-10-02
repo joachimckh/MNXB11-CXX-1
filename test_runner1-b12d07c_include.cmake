@@ -1,0 +1,5 @@
+if(EXISTS "/home/lukeking01/git/homework4/MNXB11-CXX-1/test_runner1-b12d07c_tests.cmake")
+  include("/home/lukeking01/git/homework4/MNXB11-CXX-1/test_runner1-b12d07c_tests.cmake")
+else()
+  add_test(test_runner1_NOT_BUILT-b12d07c test_runner1_NOT_BUILT-b12d07c)
+endif()

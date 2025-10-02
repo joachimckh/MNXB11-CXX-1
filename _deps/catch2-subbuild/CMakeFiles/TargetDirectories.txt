@@ -1,0 +1,3 @@
+/home/lukeking01/git/homework4/MNXB11-CXX-1/_deps/catch2-subbuild/CMakeFiles/catch2-populate.dir
+/home/lukeking01/git/homework4/MNXB11-CXX-1/_deps/catch2-subbuild/CMakeFiles/edit_cache.dir
+/home/lukeking01/git/homework4/MNXB11-CXX-1/_deps/catch2-subbuild/CMakeFiles/rebuild_cache.dir
