@@ -17,7 +17,8 @@ bool isOdd(int x) {
 }
 
 int floatToInt(float x) {
-    return (int)x;
+    return static_cast<int>(x);
+
 }
 
 
