@@ -1,15 +1,31 @@
 #include "as1.hpp"
+#include <iostream>
 
 namespace homework {
 
-void printHello() { std::cout << "Hello, World!" << std::endl; }
+void printHello() {
+    std::cout << "Hello, World!" << std::endl;
+}
 
-void AddOneRef(int &x) { return; }
+void AddOneRef(int &x) {
+    x = x + 1;
+}
 
-bool isOdd(int x) { return false; }
 
-int floatToInt(float x) { return 0; }
+bool isOdd(int x) {
+    return x % 2 != 0;
+}
 
-int factorial(int n) { return 0; }
+int floatToInt(float x) {
+    return static_cast<int>(x);
 
-}; // namespace homework
+}
+
+
+int factorial(int n) {
+    if (n < 0) return -1;
+    if (n == 0) return 1;
+    return n * factorial(n - 1);
+}
+
+}
