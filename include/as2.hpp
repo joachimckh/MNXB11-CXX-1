@@ -22,14 +22,21 @@ struct Foo {
 // == operator should return true if two vectors are equal (element-wise)
 // HINT: you can use friend functions for operator overloading (+)
 // and member functions for operator overloading (==)
+
+
 class fVector2D {
 public:
   fVector2D() = default;
   fVector2D(float x, float y) : x_(x), y_(y) {}
 
+bool operator==(const fVector2D &other) const;
+
+friend fVector2D operator+(const fVector2D &vec1, const fVector2D &vec2);
+
 private:
   float x_;
   float y_;
 };
+
 
 } // namespace homework
