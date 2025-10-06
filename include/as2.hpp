@@ -25,7 +25,15 @@ struct Foo {
 class fVector2D {
 public:
   fVector2D() = default;
-  fVector2D(float x, float y) : x_(x), y_(y) {}
+  fVector2D(float x, float y) : x_(x), y_(y) {} //This last part sets private variable equal to the argument
+
+  bool operator==(const fVector2D& other) const { //overload operator for ==, will take another vector to compare
+        return x_ == other.x_ && y_ == other.y_; //checks if the x and y values are the same, will return true if both are equal
+    }
+
+  friend fVector2D operator+(const fVector2D& lhs, const fVector2D& rhs) { 
+        return fVector2D(lhs.x_ + rhs.x_, lhs.y_ + rhs.y_); // the new x is sum of both x's
+    }
 
 private:
   float x_;
