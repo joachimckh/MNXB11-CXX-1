@@ -928,9 +928,9 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 # Target rules for target CMakeFiles/test_runner1.dir
 
 # All Build rule for target.
+CMakeFiles/test_runner1.dir/all: CMakeFiles/hwlib.dir/all
 CMakeFiles/test_runner1.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2.dir/all
 CMakeFiles/test_runner1.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/all
-CMakeFiles/test_runner1.dir/all: CMakeFiles/hwlib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_runner1.dir/build.make CMakeFiles/test_runner1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_runner1.dir/build.make CMakeFiles/test_runner1.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lukeking01/git/homework4/MNXB11-CXX-1/CMakeFiles --progress-num=96 "Built target test_runner1"
@@ -956,9 +956,9 @@ CMakeFiles/test_runner1.dir/clean:
 # Target rules for target CMakeFiles/test_runner2.dir
 
 # All Build rule for target.
+CMakeFiles/test_runner2.dir/all: CMakeFiles/hwlib.dir/all
 CMakeFiles/test_runner2.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2.dir/all
 CMakeFiles/test_runner2.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/all
-CMakeFiles/test_runner2.dir/all: CMakeFiles/hwlib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_runner2.dir/build.make CMakeFiles/test_runner2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_runner2.dir/build.make CMakeFiles/test_runner2.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lukeking01/git/homework4/MNXB11-CXX-1/CMakeFiles --progress-num=97,98 "Built target test_runner2"
@@ -984,9 +984,9 @@ CMakeFiles/test_runner2.dir/clean:
 # Target rules for target CMakeFiles/test_runner3.dir
 
 # All Build rule for target.
+CMakeFiles/test_runner3.dir/all: CMakeFiles/hwlib.dir/all
 CMakeFiles/test_runner3.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2.dir/all
 CMakeFiles/test_runner3.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/all
-CMakeFiles/test_runner3.dir/all: CMakeFiles/hwlib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_runner3.dir/build.make CMakeFiles/test_runner3.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_runner3.dir/build.make CMakeFiles/test_runner3.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lukeking01/git/homework4/MNXB11-CXX-1/CMakeFiles --progress-num=99,100 "Built target test_runner3"

@@ -73,15 +73,15 @@ CMakeFiles/test_runner1.dir/tests/test1.cxx.o: CMakeFiles/test_runner1.dir/flags
 CMakeFiles/test_runner1.dir/tests/test1.cxx.o: tests/test1.cxx
 CMakeFiles/test_runner1.dir/tests/test1.cxx.o: CMakeFiles/test_runner1.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukeking01/git/homework4/MNXB11-CXX-1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_runner1.dir/tests/test1.cxx.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_runner1.dir/tests/test1.cxx.o -MF CMakeFiles/test_runner1.dir/tests/test1.cxx.o.d -o CMakeFiles/test_runner1.dir/tests/test1.cxx.o -c /home/lukeking01/git/homework4/MNXB11-CXX-1/tests/test1.cxx
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_runner1.dir/tests/test1.cxx.o -MF CMakeFiles/test_runner1.dir/tests/test1.cxx.o.d -o CMakeFiles/test_runner1.dir/tests/test1.cxx.o -c /home/lukeking01/git/homework4/MNXB11-CXX-1/tests/test1.cxx
 
 CMakeFiles/test_runner1.dir/tests/test1.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_runner1.dir/tests/test1.cxx.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukeking01/git/homework4/MNXB11-CXX-1/tests/test1.cxx > CMakeFiles/test_runner1.dir/tests/test1.cxx.i
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukeking01/git/homework4/MNXB11-CXX-1/tests/test1.cxx > CMakeFiles/test_runner1.dir/tests/test1.cxx.i
 
 CMakeFiles/test_runner1.dir/tests/test1.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_runner1.dir/tests/test1.cxx.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukeking01/git/homework4/MNXB11-CXX-1/tests/test1.cxx -o CMakeFiles/test_runner1.dir/tests/test1.cxx.s
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukeking01/git/homework4/MNXB11-CXX-1/tests/test1.cxx -o CMakeFiles/test_runner1.dir/tests/test1.cxx.s
 
 # Object files for target test_runner1
 test_runner1_OBJECTS = \

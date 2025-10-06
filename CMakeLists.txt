@@ -45,4 +45,3 @@ if(LVL GREATER_EQUAL 3)
   target_link_libraries(test_runner3 PRIVATE hwlib Catch2::Catch2WithMain)
   catch_discover_tests(test_runner3)
 endif()
-

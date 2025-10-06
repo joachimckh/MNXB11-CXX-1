@@ -73,43 +73,43 @@ CMakeFiles/hwlib.dir/src/as1.cxx.o: CMakeFiles/hwlib.dir/flags.make
 CMakeFiles/hwlib.dir/src/as1.cxx.o: src/as1.cxx
 CMakeFiles/hwlib.dir/src/as1.cxx.o: CMakeFiles/hwlib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukeking01/git/homework4/MNXB11-CXX-1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hwlib.dir/src/as1.cxx.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hwlib.dir/src/as1.cxx.o -MF CMakeFiles/hwlib.dir/src/as1.cxx.o.d -o CMakeFiles/hwlib.dir/src/as1.cxx.o -c /home/lukeking01/git/homework4/MNXB11-CXX-1/src/as1.cxx
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hwlib.dir/src/as1.cxx.o -MF CMakeFiles/hwlib.dir/src/as1.cxx.o.d -o CMakeFiles/hwlib.dir/src/as1.cxx.o -c /home/lukeking01/git/homework4/MNXB11-CXX-1/src/as1.cxx
 
 CMakeFiles/hwlib.dir/src/as1.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hwlib.dir/src/as1.cxx.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukeking01/git/homework4/MNXB11-CXX-1/src/as1.cxx > CMakeFiles/hwlib.dir/src/as1.cxx.i
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukeking01/git/homework4/MNXB11-CXX-1/src/as1.cxx > CMakeFiles/hwlib.dir/src/as1.cxx.i
 
 CMakeFiles/hwlib.dir/src/as1.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hwlib.dir/src/as1.cxx.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukeking01/git/homework4/MNXB11-CXX-1/src/as1.cxx -o CMakeFiles/hwlib.dir/src/as1.cxx.s
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukeking01/git/homework4/MNXB11-CXX-1/src/as1.cxx -o CMakeFiles/hwlib.dir/src/as1.cxx.s
 
 CMakeFiles/hwlib.dir/src/as2.cxx.o: CMakeFiles/hwlib.dir/flags.make
 CMakeFiles/hwlib.dir/src/as2.cxx.o: src/as2.cxx
 CMakeFiles/hwlib.dir/src/as2.cxx.o: CMakeFiles/hwlib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukeking01/git/homework4/MNXB11-CXX-1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/hwlib.dir/src/as2.cxx.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hwlib.dir/src/as2.cxx.o -MF CMakeFiles/hwlib.dir/src/as2.cxx.o.d -o CMakeFiles/hwlib.dir/src/as2.cxx.o -c /home/lukeking01/git/homework4/MNXB11-CXX-1/src/as2.cxx
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hwlib.dir/src/as2.cxx.o -MF CMakeFiles/hwlib.dir/src/as2.cxx.o.d -o CMakeFiles/hwlib.dir/src/as2.cxx.o -c /home/lukeking01/git/homework4/MNXB11-CXX-1/src/as2.cxx
 
 CMakeFiles/hwlib.dir/src/as2.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hwlib.dir/src/as2.cxx.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukeking01/git/homework4/MNXB11-CXX-1/src/as2.cxx > CMakeFiles/hwlib.dir/src/as2.cxx.i
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukeking01/git/homework4/MNXB11-CXX-1/src/as2.cxx > CMakeFiles/hwlib.dir/src/as2.cxx.i
 
 CMakeFiles/hwlib.dir/src/as2.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hwlib.dir/src/as2.cxx.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukeking01/git/homework4/MNXB11-CXX-1/src/as2.cxx -o CMakeFiles/hwlib.dir/src/as2.cxx.s
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukeking01/git/homework4/MNXB11-CXX-1/src/as2.cxx -o CMakeFiles/hwlib.dir/src/as2.cxx.s
 
 CMakeFiles/hwlib.dir/src/as3.cxx.o: CMakeFiles/hwlib.dir/flags.make
 CMakeFiles/hwlib.dir/src/as3.cxx.o: src/as3.cxx
 CMakeFiles/hwlib.dir/src/as3.cxx.o: CMakeFiles/hwlib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukeking01/git/homework4/MNXB11-CXX-1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/hwlib.dir/src/as3.cxx.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hwlib.dir/src/as3.cxx.o -MF CMakeFiles/hwlib.dir/src/as3.cxx.o.d -o CMakeFiles/hwlib.dir/src/as3.cxx.o -c /home/lukeking01/git/homework4/MNXB11-CXX-1/src/as3.cxx
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hwlib.dir/src/as3.cxx.o -MF CMakeFiles/hwlib.dir/src/as3.cxx.o.d -o CMakeFiles/hwlib.dir/src/as3.cxx.o -c /home/lukeking01/git/homework4/MNXB11-CXX-1/src/as3.cxx
 
 CMakeFiles/hwlib.dir/src/as3.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hwlib.dir/src/as3.cxx.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukeking01/git/homework4/MNXB11-CXX-1/src/as3.cxx > CMakeFiles/hwlib.dir/src/as3.cxx.i
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukeking01/git/homework4/MNXB11-CXX-1/src/as3.cxx > CMakeFiles/hwlib.dir/src/as3.cxx.i
 
 CMakeFiles/hwlib.dir/src/as3.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hwlib.dir/src/as3.cxx.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukeking01/git/homework4/MNXB11-CXX-1/src/as3.cxx -o CMakeFiles/hwlib.dir/src/as3.cxx.s
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukeking01/git/homework4/MNXB11-CXX-1/src/as3.cxx -o CMakeFiles/hwlib.dir/src/as3.cxx.s
 
 # Object files for target hwlib
 hwlib_OBJECTS = \

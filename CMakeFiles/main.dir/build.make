@@ -73,15 +73,15 @@ CMakeFiles/main.dir/main.cxx.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/main.cxx.o: main.cxx
 CMakeFiles/main.dir/main.cxx.o: CMakeFiles/main.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukeking01/git/homework4/MNXB11-CXX-1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/main.cxx.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/main.cxx.o -MF CMakeFiles/main.dir/main.cxx.o.d -o CMakeFiles/main.dir/main.cxx.o -c /home/lukeking01/git/homework4/MNXB11-CXX-1/main.cxx
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/main.cxx.o -MF CMakeFiles/main.dir/main.cxx.o.d -o CMakeFiles/main.dir/main.cxx.o -c /home/lukeking01/git/homework4/MNXB11-CXX-1/main.cxx
 
 CMakeFiles/main.dir/main.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/main.cxx.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukeking01/git/homework4/MNXB11-CXX-1/main.cxx > CMakeFiles/main.dir/main.cxx.i
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukeking01/git/homework4/MNXB11-CXX-1/main.cxx > CMakeFiles/main.dir/main.cxx.i
 
 CMakeFiles/main.dir/main.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/main.cxx.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukeking01/git/homework4/MNXB11-CXX-1/main.cxx -o CMakeFiles/main.dir/main.cxx.s
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukeking01/git/homework4/MNXB11-CXX-1/main.cxx -o CMakeFiles/main.dir/main.cxx.s
 
 # Object files for target main
 main_OBJECTS = \
