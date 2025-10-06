@@ -27,6 +27,15 @@ int main() {
   if (homework::isOdd(variable)) {std::cout << "true \n";}
   else {std::cout << "false \n";}
 
+  // as 1.3
+  float f = 3.9;
+  int truncated_float = homework::floatToInt(f);
+  cout << "The float " << f << " was casted to the integer " << truncated_float << ". \n";
   
+  // as 1.4
+  int n = 5;
+  cout << n << "! = " << homework::factorial(n) << endl;
+  int negative = -4;
+  cout << negative << "! = " << homework::factorial(negative) << endl;
 }
 
