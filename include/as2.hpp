@@ -28,10 +28,10 @@ public:
   fVector2D() = default;
   fVector2D(float x, float y) : x_(x), y_(y) {}
 
-  fVector2D operator+(fVector2D& A) {
+  fVector2D operator+(const fVector2D& A) {
     return fVector2D(A.x_ + x_, A.y_+ y_);
   }
-  bool operator==(fVector2D& B) {
+  bool operator==(const fVector2D& B) {
     return (x_ == B.x_) and (y_== B.y_);
   }
 
