@@ -8,6 +8,7 @@ int Foo::bar() {
 }
 
 float Foo::baz() {
+  Foo::x = 2.71;
   return 3.14; 
 }
 
