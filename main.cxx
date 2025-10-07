@@ -13,7 +13,7 @@ int main() {
 
     std::cout << "isOdd(3) = " << isOdd(3) << " (should be 1)" << std::endl;
 
-    std::cout << "floatToInt(3.14) = " << floatToInt(3.14f) << " (should be 3)" << std::endl;
+    std::cout << "floatToInt(3.14f) = " << floatToInt(3.14f) << " (should be 3)" << std::endl;
 
     std::cout << "factorial(5) = " << factorial(5) << " (should be 120)" << std::endl;
 
@@ -25,7 +25,7 @@ int main() {
     fVector2D v1(1.0f, 2.0f);
     fVector2D v2(3.0f, 4.0f);
     fVector2D v3 = v1 + v2;
-    std::cout << "fVector2D + operator: (" << v3.x_ << ", " << v3.y_ << ")" << std::endl;
+    std::cout << "fVector2D + operator: (" << v3.getX() << ", " << v3.getY() << ")" << std::endl;
 
     // Assignment 3
     Apple apple(Color::red);
