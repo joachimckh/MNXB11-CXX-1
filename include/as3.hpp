@@ -21,18 +21,18 @@ namespace homework {
 // to the base class constructor
 
    enum class Color {
-        Red,
-        Green,
-        Yellow
+        red,
+        green,
+        yellow
         
 
     };
 
     inline std::string to_string(Color c) {
     switch (c) {
-        case Color::Red:    return "Red";
-        case Color::Green:  return "Green";
-        case Color::Yellow: return "Yellow";
+        case Color::red:    return "Red";
+        case Color::green:  return "Green";
+        case Color::yellow: return "Yellow";
         default:            return "Unknown";
     }
 }
@@ -64,7 +64,7 @@ namespace homework {
                 return Taste;
             }
         private:
-            std::string Taste{"Sweet"};
+            std::string Taste{"sweet"};
 
     };
 
