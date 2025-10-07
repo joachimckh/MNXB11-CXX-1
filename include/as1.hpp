@@ -9,7 +9,8 @@ namespace homework {
 void printHello();
 
 // As 1.1 (Reference/indirection) function that takes address of an int and returns that the
-// original value plus one TO DO: implement the function "AddOneRef"
+// original value plus one 
+// TO DO: implement the function "AddOneRef"
 void AddOneRef(int &x);
 
 // As 1.2 (Function declarators) check if number is odd return true if odd, false if even

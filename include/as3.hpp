@@ -20,4 +20,52 @@ namespace homework {
 // The constructor should take a "Color" as argument and pass the name "apple"
 // to the base class constructor
 
+   enum class Color {
+        red,
+        green,
+        yellow
+        
+
+    };
+
+    inline std::string to_string(Color c) {
+    switch (c) {
+        case Color::red:    return "Red";
+        case Color::green:  return "Green";
+        case Color::yellow: return "Yellow";
+        default:            return "Unknown";
+    }
+}
+
+    class Fruit {
+        public:
+            Fruit(std::string name, Color col){
+                _name = name;
+                _colour = col;
+            }
+            Fruit() = default;
+            std::string getName(){
+                return _name;
+            }
+            Color getColor(){
+                return _colour;
+            }
+            virtual std::string getTaste() = 0;
+
+        private:
+            std::string _name;
+            Color _colour;
+    };
+
+    class Apple : public Fruit {
+        public:
+            Apple(Color col) : Fruit("apple",col){};
+            std::string getTaste() override {
+                return Taste;
+            }
+        private:
+            std::string Taste{"sweet"};
+
+    };
+
 } // namespace homework
