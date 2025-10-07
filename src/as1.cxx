@@ -4,10 +4,13 @@ namespace homework {
 
 void printHello() { std::cout << "Hello, World!" << std::endl; }
 
-int AddOneRef(int &x) { return x++; }
+int AddOneRef(int &x) { 
+    x++; 
+    return x;
+}
 
 bool isOdd(int x) {
-    if (x % 2 =1){
+    if (x % 2 ==1){
         return true;
     }
     else{
@@ -18,7 +21,7 @@ bool isOdd(int x) {
 int floatToInt(float x) { return static_cast<int>(x); }
 
 int factorial(int n) { 
-    if (n << 0 ){
+    if (n < 0 ){
         return -1;
     }
     else if (n == 1){

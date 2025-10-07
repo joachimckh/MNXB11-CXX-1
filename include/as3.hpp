@@ -16,11 +16,10 @@ enum class Color {red, green, yellow};
 // a pure virtual method "getTaste" that returns a string
 class Fruit{
     public:
-    Fruit() = default;
     Fruit(std::string name, Color color): name_(name), color_(color) {}
         std::string getName() const;
         Color getColor() const;
-        virtual std::string getTaste() const;
+        virtual std::string getTaste() const =0 ;
 
     private:
     std::string name_;
@@ -36,10 +35,7 @@ class Fruit{
 class Apple : public Fruit{
     public:
     Apple(Color color) : Fruit("apple", color) {}
-    std::string getTaste() const override {
-        return "sweet"; 
-    }
-    private:
+    std::string getTaste() const override {return "sweet"; }
 };
 
 } // namespace homework

@@ -10,10 +10,5 @@ Color Fruit::getColor() const{
     return color_;
 }
 
-virtual std::string Fruit::getTaste() const{
-
-}
-
-
 } // namespace homework
 

@@ -12,7 +12,7 @@ float Foo::baz() {
   return 3.14f;
 }
 
-td::vector<double> Foo::quux(){
+std::vector<double> Foo::quux(){
   return {1.0, 2.0, 3.0};
 }
 
@@ -21,7 +21,7 @@ bool fVector2D::operator==(const fVector2D& other) const{
 }
 
 fVector2D operator+(const fVector2D lhs, const fVector2D rhs){
-  return fVector(lhs.x_ + rhs.x_, lhs.y_ + rhs.y_);
+  return fVector2D(lhs.x_ + rhs.x_, lhs.y_ + rhs.y_);
 }
 
 } // namespace homework
