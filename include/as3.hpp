@@ -28,7 +28,7 @@ namespace homework {
 
     };
 
-    std::string to_string(Color c) {
+    inline std::string to_string(Color c) {
     switch (c) {
         case Color::Red:    return "Red";
         case Color::Green:  return "Green";

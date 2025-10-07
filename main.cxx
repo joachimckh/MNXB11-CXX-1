@@ -10,7 +10,7 @@
 
 int main() { 
   // Example for as1.0
-  int x{-2};
+  //int x{-2};
   homework::printHello();
   //homework::AddOneRef(x);
   //std::cout << "should be -1 " << x << std::endl;
