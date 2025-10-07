@@ -28,6 +28,8 @@ class Fruit {
 
     Color getColor() const { return color_; }
 
+    virtual std::string getTaste() const = 0;
+
   protected:
     std::string name_;
     Color color_;
@@ -44,7 +46,7 @@ class Apple : public Fruit {
     Apple() = default;
     Apple(Color color) : Fruit("apple", color) {}
 
-    std::string getTaste() const { return "sweet"; }
+    std::string getTaste() const override { return "sweet"; }
 };
 
 } // namespace homework
