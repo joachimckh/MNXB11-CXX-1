@@ -1,13 +1,13 @@
-/** Use this main to test exercises. See the example with 'as1.0' below. 
- *  You can add all the exercise tests inside the same main.
- *  Don't forget to add includes properly.
- * */
-
-#include "as1.hpp"
+#include "as3.hpp"
 #include <iostream>
 
-int main() { 
-  // Example for as1.0
-  homework::printHello();
-}
+using namespace homework;
 
+int main() {
+    Apple a(Color::red);
+    std::cout << a.getName() << " is color "
+              << static_cast<int>(a.getColor())
+              << " and tastes " << a.getTaste() << "\n";
+
+    return 0;
+}
