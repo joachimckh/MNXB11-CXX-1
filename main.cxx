@@ -4,6 +4,7 @@
  * */
 
 #include "as1.hpp"
+#include "as2.hpp"
 #include <iostream>
 
 int main() { 
@@ -52,7 +53,19 @@ int main() {
   /*-------------assignment 2-------------------*/
 
 
+  homework::fVector2D v1(3,2);
+  homework::fVector2D v2(2,2);
 
+  homework::fVector2D v3 = v1 + v2;
+
+  if (v1==v2)
+    std::cout << "the vectors are equal" << std::endl;
+  else
+    std::cout << "the vectors are not equal" << std::endl;
+
+  v3.print_vec();
+
+  // seems to work!
 
 
 }

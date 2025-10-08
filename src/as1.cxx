@@ -19,7 +19,7 @@ bool isOdd(int x)
     if (x%2 == 0)   // if x is even b <-- false
         b = false;
 
-    return b; // return true if not x = even (lol)
+    return b; // return true if not x = even (lol) 
 }
 
 int floatToInt(float x) 
