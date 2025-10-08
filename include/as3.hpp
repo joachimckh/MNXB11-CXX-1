@@ -50,7 +50,7 @@ class Apple : public Fruit {  // The class called apple inherits from fruit
 public:
 
     Apple(Color color) // This is the constructor, and it will take a color
-        : Fruit("Apple", color) {}  // Calls base class constructor and passes apple and the colour through it
+        : Fruit("apple", color) {}  // Calls base class constructor and passes apple and the colour through it
 
     std::string getTaste() const override {
         return "sweet";
