@@ -21,9 +21,8 @@ public:
     Fruit (std::string name, Color color): name_(name) , color_(color) {}
     std::string getName() const;
     Color getColor() const;
-    virtual std::string getTaste() const;
+    virtual std::string getTaste() const=0;
 private:   
-    private:
     std::string name_;
     Color color_;
 };
