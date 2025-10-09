@@ -27,9 +27,32 @@ public:
   fVector2D() = default;
   fVector2D(float x, float y) : x_(x), y_(y) {}
 
+  // operators
+  bool operator==(const fVector2D& c) const{
+    return (x_ == c.x_) && (y_ == c.y_);
+  }
+  friend fVector2D operator+(const fVector2D& a, const fVector2D& b){
+    return fVector2D(a.x_ + b.x_, a.y_ + b.y_);
+  }
+
+  float getX() const {
+    return x_;
+  }
+
+  float getY() const {
+    return y_;
+  }
 private:
   float x_;
   float y_;
 };
+
+// fVector2D operator+(const fVector2D& a, const fVector2D& b){
+//   return fVector2D(a.x_ + b.x_, a.y_ + b.y_);
+// }
+
+// bool fVector2D::operator==(const fVector2D& c) const {
+//   return (x_ == c.x_) && (y_ == c.y_);
+// }
 
 } // namespace homework
