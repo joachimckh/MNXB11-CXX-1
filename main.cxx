@@ -4,7 +4,8 @@
  * */
 
 // #include "include/as1.hpp"
-#include "include/as2.hpp"
+// #include "include/as2.hpp"
+#include "include/as3.hpp"
 #include <iostream>
 
 // int main() { 
@@ -54,12 +55,30 @@
 // }
 
 
+// int main() {
+//   homework::fVector2D vector1(1.0, 2.0);
+//   homework::fVector2D vector2(3.0, 4.0);
+
+//   homework::fVector2D vector3 = (vector1 + vector2);
+
+//   std::cout << "vector1 + vector 2 = {" << vector3.getX() << " " << vector3.getY() << std::endl;
+//   return 0;
+// }
+
 int main() {
-  homework::fVector2D vector1(1.0, 2.0);
-  homework::fVector2D vector2(3.0, 4.0);
+  homework::Apple a(homework::Color::red);
 
-  homework::fVector2D vector3 = (vector1 + vector2);
+  std::cout << "Name: " << a.getName() << "\n";
+  std::cout << "Taste: " << a.getTaste() << "\n";
 
-  std::cout << "vector1 + vector 2 = {" << vector3.getX() << " " << vector3.getY() << std::endl;
+  // got this structure from chat GPT when I asked how to find out the color
+  std::cout << "Color: ";
+  switch (a.getColor()) {
+    case homework::Color::red: std::cout << "red"; break;
+    case homework::Color::green: std::cout << "green"; break;
+    case homework::Color::yellow: std::cout << "yellow"; break;
+  }
+  std::cout << std::endl;
+
   return 0;
 }
