@@ -3,7 +3,8 @@
  *  Don't forget to add includes properly.
  * */
 
-#include "include/as1.hpp"
+// #include "include/as1.hpp"
+#include "include/as2.hpp"
 #include <iostream>
 
 // int main() { 
@@ -34,8 +35,31 @@
 //   return 0;
 // }
 
+// int main() {
+//   int n = 9;
+//     std::cout << "the factorial of " << n << " is " << homework::factorial(n) << std::endl;
+//     return 0;
+// }
+
+// int main() {
+//   homework::Foo f;
+//   std::cout << "bar() = " << f.bar() << std::endl;
+//   std::cout << "baz() = " << f.baz() << std::endl;
+//   std::cout << "quuz() = {";
+//   for (double i: f.quux())
+//       std::cout << i << ' ';
+//       std::cout << "}" << std::endl;
+
+//   return 0;
+// }
+
+
 int main() {
-  int n = 9;
-    std::cout << "the factorial of " << n << " is " << homework::factorial(n) << std::endl;
-    return 0;
+  homework::fVector2D vector1(1.0, 2.0);
+  homework::fVector2D vector2(3.0, 4.0);
+
+  homework::fVector2D vector3 = (vector1 + vector2);
+
+  std::cout << "vector1 + vector 2 = {" << vector3.getX() << " " << vector3.getY() << std::endl;
+  return 0;
 }
