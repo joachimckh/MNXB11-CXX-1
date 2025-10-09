@@ -2,10 +2,12 @@
  *  You can add all the exercise tests inside the same main.
  *  Don't forget to add includes properly.
  * */
+#include <iostream>
 
 #include "as1.hpp"
 #include "as2.hpp"
-#include <iostream>
+#include "as3.hpp"
+
 
 int main() { 
 
@@ -67,6 +69,18 @@ int main() {
 
   // seems to work!
 
+
+  /*---------------assignment 3---------------------*/
+  
+  homework::Apple apple(homework::Color::red);
+  std::cout << apple.getColor() << std::endl; // prints '0' because zero:th color it seems.
+  std::cout << apple.getName() << std::endl;
+  std::cout << apple.getTaste() << std::endl;
+
+  homework::Apple app(homework::Color::green);
+  std::cout << app.getColor() << std::endl; // yep! this prints '1' = green\in enum class... we probably need some to_string function for enum_class?
+  //anyway, this works.
+  
 
 }
 
