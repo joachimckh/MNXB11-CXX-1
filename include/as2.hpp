@@ -27,6 +27,13 @@ public:
   fVector2D() = default;
   fVector2D(float x, float y) : x_(x), y_(y) {}
 
+  bool operator==(const fVector2D& v2) const; // declare new '==' operator
+
+  friend fVector2D operator+(const fVector2D &v1, const fVector2D &v2); // declare friend function so it can access (this)x_ and (this)y_ 
+
+  
+  void print_vec();// helper function to test + operator
+
 private:
   float x_;
   float y_;

@@ -20,4 +20,47 @@ namespace homework {
 // The constructor should take a "Color" as argument and pass the name "apple"
 // to the base class constructor
 
+
+
+
+enum Color // custom type Color
+{
+    red, green, yellow
+};
+
+
+class Fruit // fruit class
+{   
+
+    private:
+        std::string name_;
+        Color col_;
+
+    public: 
+        // constructor 
+        Fruit(const std::string& name, Color col) : name_(name), col_(col) {};
+
+        // get-method declarations
+        const std::string& getName() const;
+
+        Color getColor() const;
+
+        // pure virtual method
+        virtual std::string getTaste() const = 0;
+
+};
+
+
+class Apple : public Fruit  // apple class which inherits from fruit
+{
+    public:
+        // constructor
+        Apple(Color col) : Fruit("apple", col) {}; // call base constructor, set name<-"apple"
+
+        std::string getTaste() const override;
+};
+
+
+
+
 } // namespace homework
