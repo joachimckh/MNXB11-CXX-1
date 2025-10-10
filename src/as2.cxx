@@ -8,7 +8,7 @@ int Foo::bar() {
 }
 
 float Foo::baz() {
-  x = 2.71;
+  x = 2.71; // possible because its a public variable
   return 3.14;
 }
 
@@ -18,11 +18,11 @@ std::vector<double> Foo::quux() {
 
 // 2.2
 fVector2D operator+(const fVector2D &vec1, const fVector2D &vec2) {
-  return fVector2D(vec1.x_ + vec2.x_ , vec1.y_ + vec2.y_);
+  return fVector2D(vec1.x_ + vec2.x_ , vec1.y_ + vec2.y_); // adds coordinates respectively
 }
 
 bool fVector2D::operator==(const fVector2D &vec2) const {
-  return (x_ == vec2.x_) && (y_ == vec2.y_);
+  return (x_ == vec2.x_) && (y_ == vec2.y_); // compares coordinates respectively, && means only true if BOTH true. 
 }
 
 } // namespace homework

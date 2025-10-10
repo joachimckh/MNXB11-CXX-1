@@ -12,7 +12,7 @@ using namespace std;
 
 
 int main() { 
-  /*
+  
   // Example for as1.0
   homework::printHello();
 
@@ -23,19 +23,18 @@ int main() {
   cout << "After: " << variable << endl;
 
   // as 1.2
+  cout << boolalpha; //so that it prints true/false instead of 1/0. 
   cout << "The value of the variable is " << variable << ". Is this an odd number?\n" ;
-  if (homework::isOdd(variable)) {std::cout << "true \n";}
-  else {std::cout << "false \n";}
+  cout << homework::isOdd(variable) << endl;
   
   homework::AddOneRef(variable);
   cout << "The value of the variable is " << variable << ". Is this an odd number?\n" ;
-  if (homework::isOdd(variable)) {std::cout << "true \n";}
-  else {std::cout << "false \n";}
+  cout << homework::isOdd(variable) << endl;
 
   // as 1.3
-  float f = 3.9;
-  int truncated_float = homework::floatToInt(f);
-  cout << "The float " << f << " was casted to the integer " << truncated_float << ". \n";
+  float initial_float = 3.9;
+  int truncated_float = homework::floatToInt(initial_float);
+  cout << "The float " << initial_float << " was casted to the integer " << truncated_float << ". \n";
   
   // as 1.4
   int n = 5;
@@ -68,7 +67,15 @@ int main() {
 
   if (c == expected_c) {cout << "+ operator works \n";}
   else {cout << "+ operator does not work \n" ;}
-  */
+  
+
+  homework::Apple apple_1(homework::Color::green); // Im creating an object of class Apple with base class Fruit
+  homework::Apple apple_2(homework::Color::red);
+
+  cout << apple_1.getName() << " has color " << printColor(apple_1.getColor()) 
+       << " and taste " << apple_1.getTaste() << ".\n";
+  cout << apple_2.getName() << " has color " << printColor(apple_2.getColor()) 
+       << " and taste " << apple_2.getTaste() << ".\n";
 
 }
 
