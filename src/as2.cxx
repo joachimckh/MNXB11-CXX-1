@@ -26,4 +26,4 @@ bool fVector2D::operator==(const fVector2D& other) const {
 }
 
 
-} //namespace homework
+} // namespace homework

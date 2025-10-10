@@ -5,11 +5,15 @@
 
 #include "as1.hpp"
 #include "as2.hpp"
+#include "as3.hpp"
 #include <iostream>
 #include <vector>
+#include <string>
 
 int main() { 
   // as1
+  std::cout << "Assignment 1: " << std::endl;
+
   homework::printHello();
   int a = 1;
   std::cout << "a = 1 " << std::endl;
@@ -20,6 +24,8 @@ int main() {
   std::cout << homework::factorial(6) << " is the output and the answer is 720" << std::endl;
   
   // as2
+  std::cout << "Assignment 2: " << std::endl;
+
   homework::Foo foo;
   std::cout << "bar() returns: " << foo.bar() << std::endl;
   std::cout << "baz() returns: " << foo.baz() << std::endl;
@@ -42,7 +48,17 @@ int main() {
   std::cout << (V1 + V2 == V3) << std::endl;
 
   // as3
+  std::cout << "Assignment 3: " << std::endl;
+
+  homework::Color col = homework::Color::yellow;
+  std::cout << "functionality check of color should return 1:" << std::endl;
+  std::cout << (col == homework::Color::yellow) << std::endl;
   
+  homework::Apple apple{homework::Color::red};
+  std::cout << "functionality check 2 to see if the apple has all the properties it should, or that they are checked correctly" << std::endl;
+  std::cout << "answer should be 1: " << (apple.getColor() == homework::Color::red) << std::endl;
+  std::cout << "answer should be 1: " << (apple.getName() == "apple") << std::endl;
+  std::cout << "answer should be 1: " << (apple.getTaste() == "sweet") << std::endl;
 
 }
 
