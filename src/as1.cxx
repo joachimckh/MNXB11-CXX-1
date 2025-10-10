@@ -21,11 +21,12 @@ int factorial(int n) {
     else if (n == 0)
      { return 1; }
     else {
-        int res;
-        for(int i = 1; i < n; i++)
+        int res=1;
+        for(int i = 1; i <= n; i++)
         {
             res *= i ;
         }
+        return res;
         
     }
     }
