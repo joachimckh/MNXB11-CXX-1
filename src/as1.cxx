@@ -9,11 +9,11 @@ void AddOneRef(int &x) {
 }
 
 bool isOdd(int x) {
-    if (x % 2 ==1){
-        return true;
+    if (x % 2 ==0){
+        return false;
     }
     else{
-        return false;
+        return true;
     }
      }
 
@@ -23,7 +23,7 @@ int factorial(int n) {
     if (n < 0 ){
         return -1;
     }
-    else if (n == 1){
+    else if (n == 0){
         return 1;
     }
         else {
