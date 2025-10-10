@@ -1,4 +1,4 @@
-#include "/home/kiam/git/MNXB11-CXX-1-kiam/include/as1.hpp"
+#include "as1.hpp"
 
 namespace homework {
 
