@@ -10,7 +10,10 @@ void printHello();
 
 // As 1.1 (Reference/indirection) function that takes address of an int and returns that the
 // original value plus one TO DO: implement the function "AddOneRef"
-void AddOneRef(int &x);
+inline void AddOneRef(int &y) {
+    y += 2;
+    std::cout << y << " is the end value." << '\n';
+}
 
 // As 1.2 (Function declarators) check if number is odd return true if odd, false if even
 // TO DO: implement the function "isOdd" here or in src/as1.cxx
