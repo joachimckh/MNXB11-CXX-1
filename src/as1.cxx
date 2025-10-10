@@ -12,7 +12,7 @@ bool isOdd(int x) {
     return x % 2 != 0; }
 
 int floatToInt(float x) {
-    return static_cast<int>{x}; }
+    return static_cast<int>(x); }
 
 int factorial(int n) {
     if (n < 0) return -1;
