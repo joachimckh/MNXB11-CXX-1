@@ -4,6 +4,7 @@
  * */
 
 #include "as1.hpp"
+#include "as2.hpp"
 #include <iostream>
 
 
@@ -25,6 +26,22 @@ int main() {
   std::cout << homework::factorial(7) << std::endl;
   std::cout << homework::factorial(0) << std::endl;
   std::cout << homework::factorial(-4)<< std::endl;
+
+   //TESTING as2.cxx
+   //part 1
+   homework::Foo foo{};
+   std::cout << foo.bar() << std::endl;
+   std::cout << foo.baz() << std::endl;
+   std::cout << (foo.quux() == std::vector<double>{1.0,2.0,3.0}) << std::endl;
+   std::cout << foo.x << std::endl;
+   
+
+   //part 2
+
+   homework::fVector2D v2{1.0f, 2.5f};
+   homework::fVector2D w2{3.2f, 4.8f};
+   std::cout<< (v2 + w2 == homework::fVector2D{4.2f, 7.3f})<< std::endl;
+   
 
 }
 
