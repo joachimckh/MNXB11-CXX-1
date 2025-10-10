@@ -24,8 +24,9 @@ int main() {
   float w=-3.14f;
   
   homework::floatToInt(w);
-  int r=-5;
-
+  homework::factorial(-5);
+  homework::factorial(0);
+  int r=5;
   homework::factorial(r);
 
   //all seems to work for ex. 1
@@ -36,7 +37,7 @@ int main() {
   homework::Foo foo;
   std::cout<<"foo.bar() is "<< foo.bar()<<std::endl;
   std::cout<<"foo.baz() is "<< foo.baz()<<std::endl;
-  std::cout<<"foo.x() is "<< foo.x <<std::endl; //appears to yield the incorrect value. not sure why.
+  std::cout<<"foo.x() is "<< foo.x <<std::endl; //should now work.
   //unsure how to properly test for foo.quux()
 
   //testing 2.2

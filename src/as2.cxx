@@ -9,8 +9,8 @@ int Foo::bar() {
 }
 
 float Foo::baz(){
+  x = 2.71f; //fixed; mistake i think was the variable was declared after the return.
   return 3.14;
-  x = 2.71f;
 }
 
 std::vector<double> Foo::quux(){
