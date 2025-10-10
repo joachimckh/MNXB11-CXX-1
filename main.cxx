@@ -5,9 +5,11 @@
 
 #include "as1.hpp"
 #include "as2.hpp"
+#include "as3.hpp"
+
 
 #include <iostream>
-
+#include <string>
 
 int main() { 
   // Example for as1.0
@@ -48,6 +50,16 @@ int main() {
   homework::fVector2D e2(0.0f, 0.0f);
   std::cout << "a2 == e2? " << (a2 == e2) << " (expected 0)" << std::endl;
 
-  return 0;
+
+  //testing as3
+  homework::Color c = homework::Color::red;
+  std::cout <<(c == homework::Color::red) << std::endl;
+
+
+  homework::Apple apple{homework::Color::green};
+  std::cout << (apple.getColor() == homework::Color::green)<< std::endl;
+  std::cout << (apple.getName() == "apple")<< std::endl;
+  std::cout << (apple.getTaste() == "sweet")<< std::endl;
+
 }
 
