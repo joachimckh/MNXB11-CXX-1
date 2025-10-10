@@ -10,4 +10,3 @@ int main() {
   // Example for as1.0
   homework::printHello();
 }
-
