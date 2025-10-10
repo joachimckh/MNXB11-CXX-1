@@ -1,4 +1,5 @@
 #include "as1.hpp"
+#include "as2.hpp"
 #include <iostream>
 #include <cmath>
 
@@ -38,5 +39,21 @@ int main() {
     return -1;
   else
     std::cout << "the factorial of " << x << " is " << homework::factorial(x) << '\n';
+
+  
+  //as2.2, operator overloading
+  homework::fVector2D v1(1, 2);
+  homework::fVector2D v2(1, 2);
+  homework::fVector2D v3 = v1 + v2; //using overloaded + operator
+
+  if (v1 == v2)
+    return 0; //return 0 aka true if vectors are equal to eachother
+  else 
+    return 1; //return FALSE aka not 0 
+  
+  
+
+
+  
 }
 
