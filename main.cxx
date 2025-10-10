@@ -4,12 +4,14 @@
  * */
 
 #include "as1.hpp"
+#include "as2.hpp"
 
 #include <iostream>
 
+
 int main() { 
   // Example for as1.0
-  //testing 1
+  //testing as1
   homework::printHello();
   //testing the AddOneRef function from asq1.cxx
   int x=5;
@@ -24,5 +26,28 @@ int main() {
   //testing the float function from asq1.cxx with different values
   std::cout << homework::floatToInt(3.5)<< std::endl;
 
+
+  //testing as2
+  //testing FOO
+  homework::Foo foo;
+  std::cout << "foo.bar(): " << foo.bar() << " (expected 42)" << std::endl;
+  std::cout << "foo.baz(): " << foo.baz() << " (expected 3.14)" << std::endl;
+  std::cout << "foo.x: " << foo.x << " (expected 2.71)" << std::endl;
+  std::cout << "foo.quux() == {1.0, 2.0, 3.0}? " << (foo.quux() == std::vector<double>{1.0, 2.0, 3.0}) << " (expected 1)" << std::endl;
+
+  // Test fVector2D
+  homework::fVector2D a2(1.0f, 2.0f);
+  homework::fVector2D b2(3.0f, 4.0f);
+  homework::fVector2D c2 = a2 + b2;
+
+  std::cout << "a2 + b2 == fVector2D(4,6)? " << (c2 == homework::fVector2D(4.0f, 6.0f)) << " (expected 1)" << std::endl;
+
+  homework::fVector2D d2(4.0f, 6.0f);
+  std::cout << "c2 == d2? " << (c2 == d2) << " (expected 1)" << std::endl;
+
+  homework::fVector2D e2(0.0f, 0.0f);
+  std::cout << "a2 == e2? " << (a2 == e2) << " (expected 0)" << std::endl;
+
+  return 0;
 }
 
