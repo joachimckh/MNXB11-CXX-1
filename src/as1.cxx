@@ -34,8 +34,10 @@ int factorial(int n){
     }
         else {
             return n * factorial(n - 1);}
-        //doesn't print if I put the print of factorial here instead of in header
+        //doesn't print if I put the print factorial here instead of in main
         //right now it prints ugly if input is a negative number
     }
 };
-} // namespace homework
+
+
+}; // namespace homework
