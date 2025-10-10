@@ -24,12 +24,20 @@ struct Foo {
 // and member functions for operator overloading (==)
 class fVector2D {
 public:
-  fVector2D() = default;
-  fVector2D(float x, float y) : x_(x), y_(y) {}
+    fVector2D() = default;
+    fVector2D(float x, float y) : x_(x), y_(y) {}
+
+    float getX() const { return x_; }
+    float getY() const { return y_; }
+
+    bool operator==(const fVector2D &other) const;
+
+    friend fVector2D operator+(const fVector2D &a, const fVector2D &b);
 
 private:
-  float x_;
-  float y_;
+    float x_;
+    float y_;
 };
+
 
 } // namespace homework
