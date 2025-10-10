@@ -3,13 +3,9 @@
  *  Don't forget to add includes properly.
  * */
 
-/** Use this main to test exercises. See the example with 'as1.0' below. 
- *  You can add all the exercise tests inside the same main.
- *  Don't forget to add includes properly.
- * */
-
 #include "as1.hpp"
 #include "as2.hpp"
+#include "as3.hpp"
 #include <iostream>
 
 int main() { 
@@ -63,6 +59,16 @@ int main() {
 
   homework::fVector2D e2(0.0f, 0.0f);
   std::cout << "a2 == e2? " << (a2 == e2) << " (expected 0)" << std::endl;
+
+  homework::Apple myApple(homework::Color::red);
+
+    std::cout << "Name: " << myApple.getName() << "\n";
+    std::cout << "Taste: " << myApple.getTaste() << "\n";
+
+    homework::Color fruit_color = myApple.getColor();
+    if (fruit_color == homework::Color::red) std::cout << "Color: red\n";
+    else if (fruit_color == homework::Color::green) std::cout << "Color: green\n";
+    else if (fruit_color == homework::Color::yellow) std::cout << "Color: yellow\n";
 
   return 0;
 }
