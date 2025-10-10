@@ -37,6 +37,7 @@ int main() {
   std::cout<<"foo.bar() is "<< foo.bar()<<std::endl;
   std::cout<<"foo.baz() is "<< foo.baz()<<std::endl;
   std::cout<<"foo.x() is "<< foo.x <<std::endl; //appears to yield the incorrect value. not sure why.
+  //unsure how to properly test for foo.quux()
 
   //testing 2.2
 
@@ -46,11 +47,49 @@ int main() {
   homework::fVector2D test(2.0f, 4.0f);
 
   if (ab == test){
-    std::cout<<"true"<<std::endl;
-  }
+    std::cout<<"true\n";}
   else {
-    std::cout<<"false"<<std::endl;
-  }
+    std::cout<<"false\n";
+  };
   //seems to work
-}
 
+
+  //testing 3 a)
+  
+
+  homework::Color col1 = homework::Color::red;
+  homework::Color col2 = homework::Color::green;
+  homework::Color col3 = homework::Color::yellow;
+
+  if(col1 == homework::Color::red){
+    std::cout<<"First color is red\n";
+  };
+
+  if(col2 == homework::Color::green){
+    std::cout<<"Second color is green\n";
+  };
+
+  if(col3 == homework::Color::yellow){
+    std::cout<<"Third color is yellow\n";
+  };
+
+  //testing 3 b)
+
+  homework::Fruit banana("banana", homework::Color::yellow);
+
+  std::cout<<"The test fruit name is "<< banana.getName() <<std::endl;
+  std::cout<<"The test fruit tastes "<< banana.getTaste() <<std::endl;
+
+  if(banana.getColor() == homework::Color::yellow){
+    std::cout<<"The test fruit is yellow\n";
+  };
+
+  //testing 3 c)
+  homework::Apple testapple(homework::Color::red);
+  std::cout<<"The fruit is an "<<testapple.getName()<<std::endl;
+  std::cout<<"The fruit tastes "<<testapple.getTaste()<<std::endl;
+
+  if(testapple.getColor() == homework::Color::red){
+    std::cout<<"This is a normal, healthy apple.\n";
+  };
+}
