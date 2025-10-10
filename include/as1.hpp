@@ -1,16 +1,17 @@
 #pragma once
 #include <iostream>
 
-namespace homework {
+namespace homework
+{
 
-void printHello();
+    void printHello();
 
-void AddOneRef(int &x);
+    void AddOneRef(int &x);
 
-bool isOdd(int x);
+    bool isOdd(int x);
 
-int floatToInt(float x);
+    int floatToInt(float x);
 
-int factorial(int n);
+    int factorial(int n);
 
 } // namespace homework

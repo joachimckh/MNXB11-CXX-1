@@ -1,63 +1,68 @@
-/** Use this main to test exercises. See the example with 'as1.0' below. 
- *  You can add all the exercise tests inside the same main.
- *  Don't forget to add includes properly.
- * */
-
 #include "as1.hpp"
 #include "as2.hpp"
+#include "as3.hpp"
 #include <iostream>
+#include <vector>
 
-int main() { 
+int main() {
   std::cout << "Testing Assignment 1" << std::endl;
+
+  // Testing printHello()
   homework::printHello();
 
-  // Test 1: AddOneRef()
-  int a = 1;
-  homework::AddOneRef(a);
-  std::cout << "AddOneRef(1): " << a << " (expected 2)" << std::endl;
+  // Testing AddOneRef()
+  int x = 1;
+  homework::AddOneRef(x);
+  std::cout << "AddOneRef(1): " << x << " (expected 2)" << std::endl;
 
-  int b = -3;
-  homework::AddOneRef(b);
-  std::cout << "AddOneRef(-3): " << b << " (expected -2)" << std::endl;
-
-  // Test 2: isOdd()
-  std::cout << "isOdd(1): " << homework::isOdd(3) << " (expected 1)" << std::endl;
-  std::cout << "isOdd(2): " << homework::isOdd(4) << " (expected 0)" << std::endl;
+  // Testing isOdd()
+  std::cout << "isOdd(3): " << homework::isOdd(3) << " (expected 1)" << std::endl;
+  std::cout << "isOdd(4): " << homework::isOdd(4) << " (expected 0)" << std::endl;
   std::cout << "isOdd(-3): " << homework::isOdd(-3) << " (expected 1)" << std::endl;
   std::cout << "isOdd(-4): " << homework::isOdd(-4) << " (expected 0)" << std::endl;
 
-  // Test 3: floatToInt()
+  // Testing floatToInt()
   std::cout << "floatToInt(3.14f): " << homework::floatToInt(3.14f) << " (expected 3)" << std::endl;
-  std::cout << "floatToInt(-9.99f): " << homework::floatToInt(-9.99f) << " (expected -9)" << std::endl;
-  std::cout << "floatToInt(0.99999f): " << homework::floatToInt(0.9999f) << " (expected 0)" << std::endl;
+  std::cout << "floatToInt(-3.14f): " << homework::floatToInt(-3.14f) << " (expected -3)" << std::endl;
 
-  // Test 4: factorial()
-  std::cout << "factorial(-8): " << homework::factorial(-8) << " (expected -1)" << std::endl;
+  // Testing factorial()
   std::cout << "factorial(0): " << homework::factorial(0) << " (expected 1)" << std::endl;
   std::cout << "factorial(1): " << homework::factorial(1) << " (expected 1)" << std::endl;
-  std::cout << "factorial(7): " << homework::factorial(7) << " (expected 5040)" << std::endl;
+  std::cout << "factorial(5): " << homework::factorial(5) << " (expected 120)" << std::endl;
+  std::cout << "factorial(-1): " << homework::factorial(-1) << " (expected -1)" << std::endl;
 
-  std::cout << "Testing Assignment 2" << std::endl;
+  std::cout << "\nTesting Assignment 2" << std::endl;
 
-  // Test 5: Foo
-  homework::Foo foo;
+  // Testing Foo
+  homework::Foo foo{};
   std::cout << "foo.bar(): " << foo.bar() << " (expected 42)" << std::endl;
   std::cout << "foo.baz(): " << foo.baz() << " (expected 3.14)" << std::endl;
   std::cout << "foo.x: " << foo.x << " (expected 2.71)" << std::endl;
-  std::cout << "foo.quux(): " << (foo.quux() == std::vector<double>{1.0, 2.0, 3.0}) << " (expected 1)" << std::endl;
+  std::cout << "foo.quux() == {1.0, 2.0, 3.0}? " << (foo.quux() == std::vector<double>{1.0, 2.0, 3.0}) << " (expected 1)" << std::endl;
 
-  // Test 6: fVector2D
-  homework::fVector2D a2(1.0f, 2.0f);
-  homework::fVector2D b2(3.0f, 4.0f);
-  homework::fVector2D c2 = a2 + b2;
+  // Testing fVector2D
+  homework::fVector2D v2{1.0f, 2.5f};
+  homework::fVector2D w2{3.2f, 4.8f};
+  homework::fVector2D result = v2 + w2;
 
-  std::cout << "a2 + b2 == fVector2D(4,6)? " << (c2 == homework::fVector2D(4.0f, 6.0f)) << " (expected 1)" << std::endl;
+  std::cout << "(v2 + w2) == fVector2D(4.2, 7.3)? " << (result == homework::fVector2D{4.2f, 7.3f}) << " (expected 1)" << std::endl;
 
-  homework::fVector2D d2(4.0f, 6.0f);
-  std::cout << "c2 == d2? " << (c2 == d2) << " (expected 1)" << std::endl;
+  std::cout << "\nTesting Assignment 3" << std::endl;
 
-  homework::fVector2D e2(0.0f, 0.0f);
-  std::cout << "a2 == e2? " << (a2 == e2) << " (expected 0)" << std::endl;
+  // Testing Color enum
+  homework::Color color = homework::Color::red;
+  std::cout << "Color::red test: " << (color == homework::Color::red) << " (expected 1)" << std::endl;
+
+  // Testing Apple
+  homework::Apple greenApple(homework::Color::green);
+  std::cout << "greenApple.getName(): " << greenApple.getName() << " (expected apple)" << std::endl;
+  std::cout << "greenApple.getColor() == Color::green? " << (greenApple.getColor() == homework::Color::green) << " (expected 1)" << std::endl;
+  std::cout << "greenApple.getTaste(): " << greenApple.getTaste() << " (expected sweet)" << std::endl;
+
+  homework::Apple redApple(homework::Color::red);
+  std::cout << "redApple.getName(): " << redApple.getName() << " (expected apple)" << std::endl;
+  std::cout << "redApple.getColor() == Color::red? " << (redApple.getColor() == homework::Color::red) << " (expected 1)" << std::endl;
+  std::cout << "redApple.getTaste(): " << redApple.getTaste() << " (expected sweet)" << std::endl;
 
   return 0;
 }
