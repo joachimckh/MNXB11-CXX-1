@@ -11,7 +11,7 @@ float Foo::baz(){
   return 3.14f;
 }
 
-std::vector<double> quux(){
+std::vector<double> Foo::quux(){
   return{1.0,2.0,3.0};
 }
 
