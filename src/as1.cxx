@@ -41,6 +41,11 @@ namespace homework
             std::cout << -1 << std::endl;
             return -1;
         }
+        else if (n == 0)
+        { // Returns 1 if n is 0
+            std::cout << 1 << std::endl;
+            return 1;
+        }
         else
         {
             int sum{n};
