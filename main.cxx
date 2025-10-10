@@ -12,7 +12,6 @@ int main() {
  // Tests for as1
   homework::printHello();
   int a = 5;
-  std::cout << homework::AddOneRef(a) << std::endl;
   std::cout << homework::isOdd(a)<< std::endl;
   float b = 13.0f;
   std::cout << homework::floatToInt(b)<< std::endl;
