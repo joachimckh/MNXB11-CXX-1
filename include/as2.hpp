@@ -1,5 +1,6 @@
 #pragma once
 #include <vector>
+#include <iostream>
 
 namespace homework {
 // Hint: Lecture 5 slides
@@ -27,9 +28,17 @@ public:
   fVector2D() = default;
   fVector2D(float x, float y) : x_(x), y_(y) {}
 
+  // Overload + operator
+  friend fVector2D operator+(const fVector2D& vec1, const fVector2D& vec2);  
+  // Overload == operator
+  bool operator==(const fVector2D& othervec) const;
+  friend std::ostream &operator<<(std::ostream& os, const fVector2D& vec);
+
 private:
   float x_;
   float y_;
-};
+ 
 
-} // namespace homework
+
+};
+}// namespace homework
