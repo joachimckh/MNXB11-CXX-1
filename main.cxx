@@ -5,6 +5,7 @@
 
 #include "as1.hpp"
 #include "as2.hpp"
+#include "as3.hpp"
 #include <iostream>
 
 
@@ -41,6 +42,19 @@ int main() {
    homework::fVector2D v2{1.0f, 2.5f};
    homework::fVector2D w2{3.2f, 4.8f};
    std::cout<< (v2 + w2 == homework::fVector2D{4.2f, 7.3f})<< std::endl;
+
+   //TESTING as3.hpp
+   //testing color
+   homework::Color c = homework::Color::red;
+   std::cout << (c == homework::Color::red) << std::endl;
+   //testing apple
+
+   homework::Apple apple{homework::Color::green};
+   std::cout << (apple.getColor() == homework::Color::green)<<std::endl;
+   std::cout << (apple.getName() == "apple") <<std::endl;
+   std::cout << (apple.getTaste() == "sweet")<<std::endl;
+
+
    
 
 }
