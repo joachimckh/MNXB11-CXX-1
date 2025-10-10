@@ -34,8 +34,8 @@ namespace homework
         Fruit() = default;
         Fruit(std::string name, Color color) : name_(name), color_(color) {}
 
-        std::string getName() const {return name_;}
-        Color getColor() const {return color_;}
+        std::string getName() const { return name_; }
+        Color getColor() const { return color_; }
         virtual std::string getTaste() const = 0;
 
     private:
@@ -48,7 +48,6 @@ namespace homework
         Apple() = default;
         Apple(Color color) : Fruit("apple", color) {}
         std::string getTaste() const override;
-        std::string getName() const override;
 
     private:
         std::string taste_;

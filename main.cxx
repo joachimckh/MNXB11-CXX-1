@@ -12,7 +12,8 @@
 int main()
 {
   // Example for as1.0
-  std::cout << "Part 1 \n" << std::endl;
+  std::cout << "Part 1 \n"
+            << std::endl;
   homework::printHello();
   int x = 5;
   homework::AddOneRef(x);
@@ -20,7 +21,8 @@ int main()
   homework::floatToInt(5.5);
   homework::factorial(5);
   homework::factorial(-5);
-  std::cout << "Part 2 \n" << std::endl;
+  std::cout << "Part 2 \n"
+            << std::endl;
 
   std::cout << homework::Foo().bar() << std::endl;
   std::cout << homework::Foo().baz() << std::endl;
@@ -31,19 +33,16 @@ int main()
   veco == vecto;
   veco == veco;
 
-  std::cout << "\nPart 3 \n" << std::endl;
+  std::cout << "\nPart 3 \n"
+            << std::endl;
   homework::Color red{red};
   homework::Color yellow{yellow};
   homework::Apple apple(red);
   homework::Apple apple2(yellow);
   homework::Fruit &fruit = apple;
   homework::Fruit &fruit2 = apple2;
-  std::cout << fruit.getColor() << std::endl;
   std::cout << fruit.getName() << std::endl;
-  std::cout << fruit.getTaste() << std::endl; 
-  std::cout << fruit2.getColor() << std::endl;
+  std::cout << fruit.getTaste() << std::endl;
   std::cout << fruit2.getName() << std::endl;
   std::cout << fruit2.getTaste() << std::endl;
- 
-  
 }
