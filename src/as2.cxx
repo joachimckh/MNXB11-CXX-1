@@ -12,7 +12,7 @@ float Foo::baz() {
   return 3.14;
 
 }
-
+//stack overflow had a similar thing, proud to say i actually understood
 std::vector<double> Foo::quux() {
   std::vector<double> rtnVec = {1.0, 2.0, 3.0};
   return rtnVec;

@@ -42,6 +42,12 @@ int main() {
 
   
   //as2.2, operator overloading
+  //happy to say this was very straight forward and i did it without any trouble
+  //wow the magic of overloading in the header file
+  //i asked chat gpt to find any errors with this
+  //all chat gpt said was: return values must be int not bool false/true
+  //so i changed it to 0 or 1 instead of true/false
+  //hopefully that is ok?
   homework::fVector2D v1(1, 2);
   homework::fVector2D v2(1, 2);
   homework::fVector2D v3 = v1 + v2; //using overloaded + operator

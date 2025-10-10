@@ -28,11 +28,14 @@ class fVector2D {
     fVector2D(float x, float y) : x_(x), y_(y) {}
 
     // == operator as member function
+    // read online for assistance, couldn't find a similar function,but combined w/ lecture
+    // asked chat gpt for assistance here after it wouldnt compile, turns out i was missing "const"
     bool operator==(const fVector2D& anotherVector) const {
       return (x_ == anotherVector.x_) && (y_ == anotherVector.y_);
     }
 
     // + operator as friend function
+    // chat gpt suggested i go by reference so i added that
     friend fVector2D operator+(const fVector2D& a,const fVector2D& b) {
       return fVector2D(a.x_ + b.x_, a.y_ + b.y_);
     }
