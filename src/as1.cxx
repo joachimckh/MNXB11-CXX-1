@@ -57,6 +57,9 @@ int factorial(int n) {
 
 }
 
+// the for loop structure builds the product
+//i++, the loop sets to 1 and increases by 1 per interation
+
 //for the main
 //int n = -3;
 
