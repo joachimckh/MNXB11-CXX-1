@@ -1,5 +1,6 @@
 #pragma once
 #include <vector>
+#include <iostream>
 
 namespace homework {
 // Hint: Lecture 5 slides
@@ -26,6 +27,22 @@ class fVector2D {
 public:
   fVector2D() = default;
   fVector2D(float x, float y) : x_(x), y_(y) {}
+
+  fVector2D operator+(const fVector2D& second) {
+    return fVector2D(x_ + second.x_, y_ + second.y_);
+  }
+
+  bool operator==(const fVector2D& second) {
+    return (x_ == second.x_ && y_ == second.y_);
+  }
+
+  friend std::ostream& operator<<(std::ostream& os, fVector2D& vector) {
+    os << "(" << vector.x_ << "," << vector.y_ << ")";
+    return os;
+  }
+
+  // last part is done as a reference to the function
+  // vector key is an attached variable reference within this function
 
 private:
   float x_;
