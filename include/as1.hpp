@@ -6,7 +6,7 @@ namespace homework {
 void printHello();
 
 // Implemented the function "AddOneRef"
-int AddOneRef(int &x);
+void AddOneRef(int &x);
 
 // Implemented the function "isOdd" 
 bool isOdd(int x);

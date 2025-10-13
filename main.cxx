@@ -7,6 +7,10 @@
 #include <iostream>
 
 int main() { 
-  // Example for as1.0
-  homework::printHello();
+  int x = 3;
+  std::cout << &x << std::endl;
+  homework::AddOneRef(x);
+  std::cout << &x << std::endl;
+
 }
+

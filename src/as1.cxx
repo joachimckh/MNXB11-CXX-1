@@ -6,9 +6,8 @@ void printHello() {
     std::cout << "Hello, World!" << std::endl;  //Prints Hello World
 }
 
-int AddOneRef(int &x) { //Adds one to x
+void AddOneRef(int &x) { //Adds one to x
     x += 1;
-    return x;
 }
 
 bool isOdd(int x) { //Checks if x is odd or ever
