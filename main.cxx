@@ -10,7 +10,8 @@ int main() {
   // Example for as1.0
   homework::printHello();
 int x = 3;
-  homework::AddOneRef(x);
+std::cout << x << std::endl; 
+homework::AddOneRef(x);
 std::cout << x << std::endl;
 
   homework::isOdd(23);
