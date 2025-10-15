@@ -12,11 +12,23 @@ void AddOneRef(int &x) {
 
 bool isOdd(int x) { 
     
+    if(x>=0){
     if (x % 2 == 1) {
         return true;
     }
     else {
         return false;
+    }
+    }
+    else{
+        x = (-1)*x;
+        if (x % 2 == 1) {
+        return true;
+    }
+    else {
+        return false;
+    }
+
     }
 
 }
