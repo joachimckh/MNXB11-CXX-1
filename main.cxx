@@ -5,6 +5,7 @@
 
 #include "as1.hpp"
 #include "as2.hpp"
+#include "as3.hpp"
 #include <iostream>
 #include <vector>
 
@@ -49,8 +50,25 @@ int main() {
   if (a == b) { std::cout << "both elements are equal" << std::endl; 
   } else { std::cout << "elements are not equal" << std::endl; }
 
+
+  //as3
+
+  //std::cout << getColor() << std::endl;
+
+  homework::Apple newapple(homework::Color::green);
+
+  // the same below can be repeated for the other colors 
+
+  if (newapple.getColor() == homework::Color::green) {
+    std::cout << "green" << std::endl;
+  }
+
+  std::cout << newapple.getName() << std::endl;
+
+  std::cout << newapple.getTaste() << std::endl;
+
   return 0;
 
-  
+
 }
 

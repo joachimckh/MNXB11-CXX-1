@@ -3,7 +3,7 @@
 
 namespace homework {
 
-enum class Color {Red, Green, Yellow};
+//enum class Color {red, green, yellow};
 
 //class Fruit {
 
@@ -11,15 +11,34 @@ enum class Color {Red, Green, Yellow};
 
 //std::string name;
 
-//Color;
+//Color color;
 
 //public:
 
-//Fruit (std::string& Name, Color):  {}
+//Fruit (const std::string& name, Color color): name(name), color(color) {}
 
-//std::string getName() { return name; }
+//getter for the name variable/object
+//std::string getName() const { return name; }
 
-//std::string getColor() {}
+//getter for the colors in the Color class
+//Color getColor() const { return color; }
+
+//virtual std::string getTaste() const = 0;
+
+//};
+
+//class Apple: public Fruit {
+    //public: 
+    //Apple() = default; evidently not needed
+
+    //Apple(Color color)
+        //: Fruit("apple", color) {}
+
+    //must be overridden due to the virtual nature
+    //std::string getTaste() const override {
+        //return "sweet";
+    //}
+//};
 
 
 

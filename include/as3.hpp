@@ -1,5 +1,5 @@
 #pragma once
-
+#include <iostream>
 #include <string>
 
 namespace homework {
@@ -19,5 +19,44 @@ namespace homework {
 // The taste of an apple is "sweet"
 // The constructor should take a "Color" as argument and pass the name "apple"
 // to the base class constructor
+
+enum class Color {red, green, yellow};
+
+class Fruit {
+
+private: 
+
+std::string name;
+
+Color color;
+
+public:
+
+//error, cannot bind non-const lvalue reference of type std::string&
+
+Fruit (const std::string& name, Color color): name(name), color(color) {}
+
+//getter for the name variable/object
+std::string getName() const { return name; }
+
+//getter for the colors in the Color class
+Color getColor() const { return color; }
+
+virtual std::string getTaste() const = 0;
+
+};
+
+class Apple: public Fruit {
+    public: 
+    //Apple() = default; evidently not needed
+
+    Apple(Color color)
+        : Fruit("apple", color) {}
+
+    //must be overridden due to the virtual nature
+    std::string getTaste() const override {
+        return " is sweet";
+    }
+};
 
 } // namespace homework
